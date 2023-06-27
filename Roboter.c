@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 void getStuhlInput();
-void getAnzahlSchritte();
+void getAnzahlAnSchritte();
 void printSchritte(int j, int schritteGesamt, int umdrehungen, bool* stuhlErreicht);
 
 char input[];
@@ -16,7 +16,7 @@ int main() {
     do {
         getStuhlInput();
 
-        getAnzahlSchritte();
+        getAnzahlAnSchritte();
         int schritteDurchgang = atoi(input);
         schritteGesamt += schritteDurchgang;
         printSchritte(1 + schritteGesamt - schritteInDurchgang, schritteGesamt, umdrehungen, *stuhlErreicht)
