@@ -28,17 +28,17 @@ void getAnzahlSchritte() {
 	do {
 		if (!validInput) {
 				printf("UNZULAESSIGER INPUT!!!\n");
-				printf("Bitte gib eine positive Ganzzahl an!\n");
+				printf("Bitte gib eine positive zahl an!\n");
 		}
 		switch(mode) {
 			case 1:
-				printf("\nWie viele Schritte bis zum Stuhl?\n");
+				printf("\nWie viele Schritte noch bis zur Stuhl?\n");
 				break;
 			case 2:
-				printf("\nWie viele Schritte bis zur Wand?\n");
+				printf("\nWie viele Schritte noch bis zur Wand?\n");
 				break;
 			default:
-				printf("\n Ein Fehler ist aufgetreten! Bitte beende das Programm!");
+				printf("\n Ein Fehler ist aufgetreten! Bitte beende Sie das Programm!");
 				return;
 		}
 		printf("Eingabe: ");
@@ -76,7 +76,7 @@ void printSchritte(int j, int schritteGesamt, int umdrehungen, bool* stuhlErreic
 			printf("%d. Linksdrehung\n", umdrehungen);
 			break;
 		default:
-			printf("\n Ein Fehler ist aufgetreten! Bitte beende das Programm!");
+			printf("\n Ein Fehler ist aufgetreten! Bitte beende Sie das Programm!");
 			return;
 	}
 }
